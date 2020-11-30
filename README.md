@@ -1,10 +1,8 @@
-# Learning the Basics of Unity
+# Space Raiders
 
 ## Overview
 
-In this project, you will first learn the basics of Unity by completing a
-Driving Simulator. Then, you will apply what you learned while creating that
-driving simulator to fix and implement a Flying Simulator.
+In this project, you will continue to hone the basics of Unity while creating a top down, 2D Shooter. Before you get started, take a look at one of my favorite NES games of all time [ZANAC](https://drive.google.com/file/d/16NXZVlsQTBM_uv4uEzwRvJXYIRuMd3M2/view). After downloading, open up the `Zanac.html` file in your web browser. The controls are listed at the bottom of the page. Your goal is to create a game similar to this.
 
 * [Setup your repository](#setup-your-repository)
   * [Sign up for the project](#sign-up-for-project)
@@ -24,7 +22,7 @@ driving simulator to fix and implement a Flying Simulator.
 
 ### Sign up for Project
 
-Sign up for the project repository here: [https://classroom.github.com/a/tJfBiG39](https://classroom.github.com/a/tJfBiG39)
+Sign up for the project repository here: [https://classroom.github.com/a/3raTMV5L](https://classroom.github.com/a/3raTMV5L)
 
 After your repository has initialized it, clone it to your computer. I recommend
 putting it in your `ap-csp` directory.
@@ -77,16 +75,20 @@ and assign `jcollard` as a reviewer.
 
 ### Milestone 1
 
-Due Date: Friday November 6th @ 8AM
+Due Date: Thursday Dec. 3rd @ 8AM
 
-An introduction to all of the basic mechanics to create a 2D Platformer in Unity
-is available on YouTube: [Tofu Land Tutorial](https://youtu.be/UAyXpDhJ3XE)
+An introduction to all of the basic mechanics to create a 2D Shooter in Unity is
+available as part of the following videos. Note: The first video has you create
+a new 2D Project using Unity Hub. You *should not* do this. Instead, you should
+import the `SpaceRaiders` directory into Unity Hub. You *must* use Unity
+2019.4.14. This can be downloaded here:
+https://unity3d.com/get-unity/download/archive
+
+1. [Part 1](https://drive.google.com/file/d/1VXH6Kb_X1xyXr3PVOYvDoVTteLoJ36Ln/view?usp=sharing) - Skip to 0:40
+2. [Part 2](https://drive.google.com/file/d/1hj3pIKCXdit3SMwa6Jcmiv7mNaCTLcQT/view?usp=sharing)
+3. [Part 3](https://drive.google.com/file/d/1XE4dWywKgKCsfxmRnJ2bHfctxjBMBZSI/view?usp=sharing)
 
 The first Milestone is to complete all of the videos and challenges therein.
-
-**Note:** You do not need to create a new project as described in the Tofu Land
-Setup video. Instead, you should add the project located inside of this
-repository. 
 
 All code that you would like to count toward your evaluation should be part of a
 `tag` on in your repository called `milestone-1`. This can be created by running
@@ -96,27 +98,13 @@ determine when your work was submitted.
 
 ### Milestone 2
 
-Due Date: Thursday November 12th @ 8AM
+Due Date: Thursday Dec. 10th @ 8AM
 
-Now that you have completed the base tutorial for creating Tofu Land, you will
-design a new scene using the [additional
-assets](https://drive.google.com/file/d/1I_i_layc87p4qZp1H6dw8XLL4VWbZp9w/view?usp=sharing).
+You must complete 2 of the 3 challenges below:
 
-These assets include many more background tiles, a set of orb sprites, and
-additional Tofu and Enemy sprites. You may also wish to find more open source
-sprites from [OpenGameArt.org](https://opengameart.org/). 
-
-#### Steps to complete Milestone 2
-
-1. Import all of the new assets into your project
-2. Create a new Scene
-3. Create a unique Scene that has platforms and Enemies
-4. In addition to creating platforms, add edge colliders to create walls that
-   prevent the Tofu Character. 
-
-Here is an example Scene for Reference:
-
-![example_scene.png](example_scene.png)
+* [Randomly Generated Background](https://docs.google.com/document/d/1iuqgwFVWErdtUFzfZtB03bBDS5XCoHwXB4GxPMKs1xM/edit)
+* [Taking Damage](https://docs.google.com/document/d/1CJYxzm8Zhe7aeCGCQrrd_cazxCbc_TG1tNgPYw3vZT0/edit)
+* [Enemy Lasers](https://docs.google.com/document/d/1UiuvScL_Grs7GPEc6sOY6ClcRjloUYvfmkvZbRcoXo0/edit)
 
 All code that you would like to count toward your evaluation should be part of a
 `tag` on in your repository called `milestone-2`. This can be created by running
@@ -126,69 +114,24 @@ determine when your work was submitted.
 
 ### Milestone 3
 
-Due Date: Monday November 16th @ 8AM
+Due Date: Monday Dec. 14th @ 8AM
 
-Now that you have designed a basic scene, spice it up by adding additional Enemy
-types each that use a different controller for their logic. For this portion,
-you must create 2 additional enemies:
+Propose and implement at least 3 additional features. To get a score of
+advanced, you must implement 5 additional features. Note, one of your features
+may be the unimplemented feature for Milestone 2. You should propose your feature on Piazza for approval prior to implementing it.
 
-1. An enemy that hops rather than walking
-2. An enemy that always moves toward the Tofu's position
+Example Features:
 
-#### Bonus: 2 Additional Enemies
-
-To receive a score of Advanced on this project, you must design two unique
-enemies that implement additional logic. You must have these enemies approved to
-receive full points. Be sure to post your ideas on Piazza for approval.
+* New Enemy Types
+* A Boss Enemy
+* Sounds / Music
+* Power Up Items
 
 All code that you would like to count toward your evaluation should be part of a
 `tag` on in your repository called `milestone-3`. This can be created by running
 `git tag milestone-3`. Then push your tag to your repository by running `git
 push -u origin milestone-3`. The date of this tag creation will be used to
-determine when your work was submitted. submitted. 
-
-### Milestone 4
-
-Due Date: Thursday November 19th @ 8AM
-
-For this Milestone, you must add in Spikes that cause the Tofu Character to be
-moved back to the start of the level when they touch the pointy side of the.
-This logic can also be used to make the Tofu Character respawn when an enemy
-touches them rataher than being knocked away.
-
-#### Bonus: Give the Tofu Multiple Hit Points
-
-To receive a score of Advanced on this project, you must add a `health` variable
-to your Tofu character that is reduced when they touch the spikes. When the
-`health` variable is zero their `health` variable is set back to full and they
-are moved to the start of the level.
-
-All code that you would like to count toward your evaluation should be part of a
-`tag` on in your repository called `milestone-4`. This can be created by running
-`git tag milestone-4`. Then push your tag to your repository by running `git
-push -u origin milestone-4`. The date of this tag creation will be used to
-determine when your work was submitted. submitted. 
-
-### Milestone 5
-
-Due Date: Monday November 23rd @ 8AM
-
-The final part of the project is to add in a unique feature. Propose an idea on
-Piazza for approval. Here are some ideas:
-
-1. Sound Effects
-2. A user interface that tracks the number of Orbs collected by the Tofu Player
-3. A Game Over Screen when the Tofu dies
-4. A second Scene that the player spawns on when they have killed all enemies.
-
-**Note:** Your proposed idea must be approved to receive full points. 
-
-Your completed Tofu Land Scene is due at this time. All code that you would like
-to count toward your evaluation should be part of a `tag` on in your repository
-called `milestone-5`. This can be created by running `git tag milestone-5`. Then
-push your tag to your repository by running `git push -u origin milestone-5`.
-The date of this tag creation will be used to determine when your work was
-submitted. submitted. 
+determine when your work was submitted.
 
 ## Grading
 
