@@ -1,0 +1,21 @@
+######################################################
+# SETUP IS COMPLETE. YOU SHOULD NOW CREATE A         #
+# `develop` BRANCH BY RUNNING THE FOLLOWING COMMAND: #
+#                                                    #
+# git checkout -b develop                            #
+#                                                    #
+# THEN PUSH THAT BRANCH TO GITHUB BY RUNNING THE     #
+# FOLLOWING COMMAND:                                 #
+#                                                    #
+# git push -u origin develop                         #
+#                                                    #
+# AFTER PUSHING, OPEN A PULL REQUEST FROM YOUR       #
+# `develop`  BRANCH TO THE `main` BRANCH BY VISITING #
+# THIS REPO ON GITHUB, CLICKING `Pull Requests`      #
+# THEN `New pull request`. THE BASE BRANCH SHOULD BE #
+# `main` and THE COMPARE BRANCH SHOULD BE `develop`. #
+#                                                    #
+# FINALLY, ADD YOUR INSTRUCTOR AS A REVIEWER ON      #
+# GITHUB. THIS IS HOW YOUR INSTRUCTOR WILL SEE YOUR  #
+# WORK.                                              #
+######################################################

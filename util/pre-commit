@@ -1,0 +1,16 @@
+#!/bin/bash
+LC_ALL=C
+
+local_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+invalid_branch_regex="(main|setup)"
+
+if [[ "$local_branch" = "main" ]]
+then
+    DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+    cat $DIR/pre-commit-warning.txt
+    echo "You're currently on the main branch. You should switch to the develop branch to perform your work."
+    exit 1
+fi
+
+exit 0
