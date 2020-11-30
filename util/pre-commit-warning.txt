@@ -1,0 +1,15 @@
+######################################################
+# YOU ARE ATTEMPTING TO COMMIT TO THE `main` BRANCH. #
+# YOU SHOULD PROBABLY BE WORKING ON YOUR `develop`   #
+# BRANCH.                                            #
+#                                                    #
+# IF YOU HAVE NOT ALREADY DONE SO, YOU CAN CREATE A  #
+# DEVELOP BRANCH BY RUNNING:                         #
+#                                                    #
+# git checkout -b develop                            #
+#                                                    #
+# IF YOU ALREADY HAVE A DEVELOP BRANCH, YOU CAN      #
+# SWITCH TO IT BY RUNNING                            #
+#                                                    #
+# git checkout develop                               #
+######################################################
