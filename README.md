@@ -10,8 +10,6 @@ In this project, you will continue to hone the basics of Unity while creating a 
   * [Milestone 1](#milestone-1)
   * [Milestone 2](#milestone-2)
   * [Milestone 3](#milestone-3)
-  * [Milestone 4](#milestone-4)
-  * [Milestone 5](#milestone-5)
 * [Grading](#grading)
   * [Computational Thinking](#computational-thinking)
   * [Computing, Programming and Practice](#computing-programming-and-practice)
