@@ -82,6 +82,8 @@ import the `SpaceRaiders` directory into Unity Hub. You *must* use Unity
 2019.4.14. This can be downloaded here:
 https://unity3d.com/get-unity/download/archive
 
+Game Assets: [https://drive.google.com/file/d/1cSjXk1_5NB4jJEqqseGIxP3swtaHrE2j/view](https://drive.google.com/file/d/1cSjXk1_5NB4jJEqqseGIxP3swtaHrE2j/view)
+
 1. [Part 1](https://drive.google.com/file/d/1VXH6Kb_X1xyXr3PVOYvDoVTteLoJ36Ln/view?usp=sharing) - Skip to 0:40
 2. [Part 2](https://drive.google.com/file/d/1hj3pIKCXdit3SMwa6Jcmiv7mNaCTLcQT/view?usp=sharing)
 3. [Part 3](https://drive.google.com/file/d/1XE4dWywKgKCsfxmRnJ2bHfctxjBMBZSI/view?usp=sharing)
