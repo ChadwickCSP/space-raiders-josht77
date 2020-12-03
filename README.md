@@ -134,7 +134,6 @@ determine when your work was submitted.
 ## Grading
 
 #### Computational Thinking
-
 | Advanced                                                                         | Proficient                                                                  | Basic                                                                                                                      | Below Basic                                            |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | Student creates 5 different enemy types                                          | Student creates the 3 basic enemies for Milestone 3                         | Student completes all of the Tutorial Video features                                                                       | Student does not complete all features in video series |
