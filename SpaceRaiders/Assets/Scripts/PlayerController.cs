@@ -75,13 +75,13 @@ public class PlayerController : MonoBehaviour
         if(y < minY)
         {
             print("Beyond bottom");
-            transform.position = new Vector3(minY, x);
+            transform.position = new Vector3(x, minY);
         }
 
         if(y > maxY)
         {
             print("Beyond top");
-            transform.position = new Vector3(maxY, x);
+            transform.position = new Vector3(x, maxY);
         }
     }
 
