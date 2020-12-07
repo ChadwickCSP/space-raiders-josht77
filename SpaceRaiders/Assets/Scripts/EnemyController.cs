@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public EnemyController laser;
+
+    public float fireRate;
+
+    public float lastShot;
+
+    public float laserSpeed;
     // Controls the speed of this enemy ship
     public float speedX, speedY;
     // Controls the bounds of the Y axis
@@ -21,6 +28,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         moveEnemy();
+
+        checkFireLaser();
     }
 
     void moveEnemy()
@@ -53,6 +62,31 @@ public class EnemyController : MonoBehaviour
             // Destroy both the enemy ship and the laser game obects
             UnityEngine.Object.Destroy(this.gameObject);
             UnityEngine.Object.Destroy(otherObject);
+        }
+    }
+
+    void checkFireLaser()
+    {
+        float nextShot = fireRate + lastShot;
+
+        float currentTime = Time.time;
+
+        if (laser != null && nextShot < currentTime)
+        {
+            print("Fired!");
+            EnemyController enemyLaser = UnityEngine.Object.Instantiate(laser);
+
+            float x, y;
+
+            x = transform.position.x;
+
+            y = transform.position.y - 0.5f;
+
+            enemyLaser.transform.position = new Vector2(x, y);
+
+            lastShot = currentTime;
+
+            enemyLaser.speedY = 2;
         }
     }
 }
