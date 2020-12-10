@@ -91,8 +91,9 @@ public class PlayerController : MonoBehaviour
 
     private void OntriggerEnter2D(Collider2D collision)
     {
-        if(enemyShip != null)
+        if(enemyShip || enemyLaser != null)
         {
+            print("Destroy");
             UnityEngine.Object.Destroy(this.gameObject);
 
             Spawner playerSpawner = respawnedPlayerShip.GetComponent<Spawner>();

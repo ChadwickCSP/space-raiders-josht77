@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject toSpawn;
+    public PlayerController toSpawn;
 
     public float respawnTime;
 
@@ -28,18 +28,17 @@ public class Spawner : MonoBehaviour
         {
             print("Spawned Player!");
 
-            GameObject respawnedPlayerShip = UnityEngine.Object.Instantiate(toSpawn);
+            PlayerController playerController = UnityEngine.Object.Instantiate(toSpawn);
 
             transform.Translate(startPosition);
 
-            PlayerController playerController = respawnedPlayerShip.GetComponent<PlayerController>();
             playerController.speed = -10;
             playerController.minX = -8.5f;
             playerController.maxX = 8.5f;
             playerController.minY = -5.2f;
             playerController.maxY = -5.2f;
 
-            isDead = true;
+            isDead = false;
         }
     }
 }
