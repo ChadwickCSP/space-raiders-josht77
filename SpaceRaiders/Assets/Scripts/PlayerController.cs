@@ -5,11 +5,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public EnemyController enemyShip;
-    // different variables
     public float speed;
     public float maxX, minX;
     public float maxY, minY;
-
     public GameObject respawnedPlayerShip;
     public EnemyController enemyLaser;
 
