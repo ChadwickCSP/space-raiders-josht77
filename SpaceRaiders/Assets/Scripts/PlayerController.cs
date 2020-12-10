@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public EnemyController enemyShip;
     // different variables
     public float speed;
     public float maxX, minX;
     public float maxY, minY;
+
+    public GameObject respawnedPlayerShip;
+    public EnemyController enemyLaser;
 
     // The laser gameobject to clone when firing
     public GameObject laser;
@@ -85,4 +89,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OntriggerEnter2D(Collider2D collision)
+    {
+        if(enemyShip != null)
+        {
+            UnityEngine.Object.Destroy(this.gameObject);
+
+            Spawner playerSpawner = respawnedPlayerShip.GetComponent<Spawner>();
+
+            playerSpawner.isDead = true;
+        }
+    }
 }

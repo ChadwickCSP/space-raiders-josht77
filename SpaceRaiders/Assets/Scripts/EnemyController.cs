@@ -73,7 +73,6 @@ public class EnemyController : MonoBehaviour
 
         if (laser != null && nextShot < currentTime)
         {
-            print("Fired!");
             EnemyController enemyLaser = UnityEngine.Object.Instantiate(laser);
 
             float x, y;

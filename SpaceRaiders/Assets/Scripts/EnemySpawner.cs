@@ -27,7 +27,6 @@ public class EnemySpawner : MonoBehaviour
 
         if (elapsedTime > spawnRate)
         {
-            print("Spawn");
 
             // Create a new enemy instance and set its starting position
             GameObject newEnemy = UnityEngine.Object.Instantiate(enemy);
