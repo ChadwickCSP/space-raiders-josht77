@@ -991,7 +991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b3fd7d08e85eb42adbd2aeff4b5676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toSpawn: {fileID: 0}
+  toSpawn: {fileID: 1668133659}
   respawnTime: 2
   isDead: 0
   startPosition: {x: 0, y: -4}

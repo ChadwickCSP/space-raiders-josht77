@@ -30,13 +30,13 @@ public class Spawner : MonoBehaviour
 
             PlayerController playerController = UnityEngine.Object.Instantiate(toSpawn);
 
-            transform.Translate(startPosition);
+            playerController.gameObject.transform.position = startPosition;
 
-            playerController.speed = -10;
+            playerController.speed = 10;
             playerController.minX = -8.5f;
             playerController.maxX = 8.5f;
             playerController.minY = -5.2f;
-            playerController.maxY = -5.2f;
+            playerController.maxY = 5.2f;
 
             isDead = false;
         }

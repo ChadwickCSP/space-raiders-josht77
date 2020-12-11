@@ -87,7 +87,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OntriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if(enemyShip || enemyLaser != null)
         {
@@ -97,6 +97,8 @@ public class PlayerController : MonoBehaviour
             Spawner playerSpawner = respawnedPlayerShip.GetComponent<Spawner>();
 
             playerSpawner.isDead = true;
+
+            playerSpawner.respawnTime = Time.time + 2;
         }
     }
 }
