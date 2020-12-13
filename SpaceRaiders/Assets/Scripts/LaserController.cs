@@ -9,6 +9,8 @@ public class LaserController : MonoBehaviour
     // specifies how far off the screen the laser can be before it is destroyed
     public float maxY, minY;
 
+    public float damage;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -18,6 +18,9 @@ public class EnemyController : MonoBehaviour
     // Controls the bounds of the X axis
     public float minX, maxX;
 
+    public float hullStrength;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +62,16 @@ public class EnemyController : MonoBehaviour
         // If the otherObject has a LaserController, that means our EnemyShip should be destroyed
         if ( laserController != null)
         {
+            print ("hit");
+            this.hullStrength -= laserController.damage;
             // Destroy both the enemy ship and the laser game obects
-            UnityEngine.Object.Destroy(this.gameObject);
             UnityEngine.Object.Destroy(otherObject);
+        
+            if (hullStrength < 1)
+            {
+                print ("dead");
+                UnityEngine.Object.Destroy(this.gameObject);
+            }
         }
     }
 
@@ -85,7 +95,7 @@ public class EnemyController : MonoBehaviour
 
             lastShot = currentTime;
 
-            enemyLaser.speedY = 2;
+            enemyLaser.speedY = 6;
         }
     }
 }
