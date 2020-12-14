@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StarController : MonoBehaviour
 {
-
+    // variables to control bounds of the stars and speed
     public float speed;
     public float minX, maxX;
     public float minY, maxY;
@@ -18,18 +18,21 @@ public class StarController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // update the void moveEnemy
         moveEnemy();
     }
 
     void moveEnemy()
     {
+        // updates the stars positions and movement
         transform.Translate(Vector2.down * Time.deltaTime * speed);
 
         float x = transform.position.x;
         float y = transform.position.y;
-
+        // bounds
         if (x < minX || x > maxX || y < minY || y > maxY)
         {
+            // controlling the bounds of the stars so that they are destoryed if outside of them
             UnityEngine.Object.Destroy(this.gameObject);
         }
     }

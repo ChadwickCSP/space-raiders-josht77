@@ -28,6 +28,7 @@ public class LaserController : MonoBehaviour
         // Checks if the y position is outside of the upper bound and if it is it destroys it
         if (y > maxY)
         {
+            // object will be destroyed if it goes out of the bounds
             UnityEngine.Object.Destroy(this.gameObject);
         }
     }

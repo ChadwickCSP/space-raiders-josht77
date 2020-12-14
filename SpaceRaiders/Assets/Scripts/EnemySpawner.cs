@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
     {
         float currentTime = Time.time;
         float elapsedTime = currentTime - lastSpawnTime;
-
+        // if the elapsed time is greater than the spawnrate, then a new enemy will spawn
         if (elapsedTime > spawnRate)
         {
 
@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
             EnemyController enemyController = newEnemy.GetComponent<EnemyController>();
             enemyController.speedX = 5;
             enemyController.speedY = -2;
-
+            // the last time an enemy spawned is equal to the currenttime.
             lastSpawnTime = currentTime;
         }
     }
